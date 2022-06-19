@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/J-Rayln/fem-single-price-grid-component)
-- Live Site URL: [Add live site URL here](https://j-rayln.github.io/fem-single-price-grid-component/)
+- Solution URL: [https://github.com/J-Rayln/fem-single-price-grid-component](https://github.com/J-Rayln/fem-single-price-grid-component)
+- Live Site URL: [https://j-rayln.github.io/fem-single-price-grid-component/](https://j-rayln.github.io/fem-single-price-grid-component/)
 
 ## My process
 
