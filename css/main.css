@@ -1,0 +1,185 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* CSS Custom Properties */
+:root {
+  --clr-Cyan: hsl(179, 62%, 43%);
+  --clr-LightCyan: hsl(179, 47%, 52%);
+  --clr-LtAqua: hsl(180, 98%, 84%);
+  --clr-BrightYellow: hsl(71, 73%, 54%);
+  --clr-LightGray: hsl(204, 43%, 93%);
+  --clr-GrayishBlue: hsl(218, 22%, 67%);
+  --clr-White: hsl(0, 0%, 100%);
+  --ff-body: "Karla", sans-serif;
+  --fw-reg: 400;
+  --fw-bold: 700;
+  --fs-body: 1rem;
+  --fs-h1: 1.25rem;
+  --fs-h2: 1.1625rem;
+  --br: 10px;
+  --box-shaddow:
+      0.25em 0.25em 1.25em rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 37.5rem) {
+  :root {
+    --fs-h1: 1.5rem;
+  }
+}
+
+/* Global Styles */
+body {
+  background-color: var(--clr-LightGray);
+  color: var(--clr-LightGray);
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  font-weight: var(--fw-reg);
+  line-height: 1.3;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2 {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: var(--fs-h1);
+}
+
+h2 {
+  font-size: var(--fs-h2);
+}
+
+.btn {
+  display: flex;
+  background-color: var(--clr-BrightYellow);
+  color: var(--clr-White);
+  justify-content: center;
+  padding: 1.125rem 0;
+  border-radius: var(--br);
+}
+@media (min-width: 37.5rem) {
+  .btn:hover {
+    color: var(--clr-GrayishBlue);
+    transform: scale(1.04);
+    transition: transform 300ms ease-in-out;
+  }
+}
+
+.flow-x {
+  padding-left: 1.5625rem;
+  padding-right: 1.5625rem;
+}
+
+.flow-y {
+  padding-top: 1.875rem;
+  padding-bottom: 1.5rem;
+}
+
+main {
+  background-color: var(--clr-White);
+  box-shadow: var(--box-shaddow);
+  border-radius: var(--br);
+  max-width: 312px;
+  margin-top: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 37.5rem) {
+  main {
+    max-width: 40rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "join-us join-us" "pricing why-us";
+  }
+}
+
+.join-us {
+  overflow: hidden;
+  padding-top: 1.875rem;
+  padding-bottom: 2.5rem;
+  color: var(--clr-GrayishBlue);
+}
+@media (min-width: 37.5rem) {
+  .join-us {
+    grid-column: 1/-1;
+  }
+}
+.join-us p {
+  line-height: 1.8;
+  margin-bottom: 0;
+}
+.join-us__title {
+  color: var(--clr-Cyan);
+}
+.join-us__subtitle {
+  font-size: var(--fs-h2);
+  font-weight: var(--fw-bold);
+  color: var(--clr-BrightYellow);
+}
+
+.pricing {
+  background-color: var(--clr-Cyan);
+}
+@media (min-width: 37.5rem) {
+  .pricing {
+    border-bottom-left-radius: var(--br);
+  }
+}
+.pricing__title {
+  font-weight: var(--fw-bold);
+}
+.pricing__cost {
+  color: var(--clr-White);
+  font-size: 1.5rem;
+}
+.pricing__cost span {
+  color: var(--clr-LtAqua);
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.why-us {
+  background-color: var(--clr-LightCyan);
+  color: var(--clr-LtAqua);
+  border-bottom-left-radius: var(--br);
+  border-bottom-right-radius: var(--br);
+}
+@media (min-width: 37.5rem) {
+  .why-us {
+    border-bottom-left-radius: 0;
+  }
+}
+.why-us__title {
+  color: var(--clr-White);
+}
+.why-us__features {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+.why-us__item {
+  padding-left: 0;
+}
+
+footer {
+  color: var(--clr-GrayishBlue);
+  margin-top: 1.25rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}/*# sourceMappingURL=main.css.map */
